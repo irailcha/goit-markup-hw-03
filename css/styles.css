@@ -9,7 +9,7 @@
   --color-primary: #212121;
   --color-secondary:#757575;
   --color-accent: #188CE8;
-}
+}ner
 
 html{
     box-sizing: border-box;
@@ -31,10 +31,14 @@ body{
 
 .container{
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
 ul{
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 a{
@@ -51,7 +55,6 @@ a{
     font-size: 26px;
     line-height: 1.19; 
     letter-spacing: 0.03em;
-    margin: 24 1240 25 215;
 }
 
 .logo-header{
@@ -113,9 +116,15 @@ a{
     color: var(--color-brand);
 }
 
-.site-nav{
+.site-nav {
     display: flex;
 
+}
+.site-nav li{
+    margin-right: 50px;
+}
+.site-nav li:last-child{
+    margin-right: 0;
 }
 
 .contact{
@@ -132,15 +141,24 @@ a{
 
 .address{
     display: flex;
+    
 }
 
+.address li{
+    margin-right: 50px;
 
+}
+.address li:last-child{
+    margin-right: 0;
+}
 
 
 /*секція Hero*/
 .hero{
     background-color: var(--background-color-hero);
     height: 600px;
+    text-align: center;
+
 
 }
 
@@ -152,7 +170,8 @@ a{
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 /*кнопки*/
@@ -166,12 +185,11 @@ a{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
-    margin-top: 30px;
     display: inline-block;
     padding: 10px 32px;
+    min-width: 216px;
     
     
     
@@ -194,7 +212,11 @@ a{
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
+    display: inline-block;
+    padding: 6px 22px;
+    min-width: 73px;
     }
+
 
 .button-secondary:hover,
 .button-secondary:focus{
@@ -203,7 +225,12 @@ a{
 }
 
 /*секція subtitle-hero */
+.subtitle-hero{
+    
+}
 .caption{
+    margin-top: 0;
+    margin-bottom: 10;
     color: var(--color-primary);
     font-weight: 700;
     font-size: 14px;
@@ -211,9 +238,12 @@ a{
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
+
 }
 
 .text-hero{
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--color-secondary);
     font-size: 14px;
     line-height: 1.71;
@@ -221,26 +251,21 @@ a{
 }
 
 .section-tittle{
+    margin-top: 0;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
 }
-.element-hero {
-    display: flex;
-    width: 1170px;
-    margin-top: 94px;
-}
-
-.element-hero li {
-    margin-right: 30px;
-}
-
 
 
 /*секція element-hero*/
-
+.element-hero{
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -253,10 +278,15 @@ a{
 }
 
 
+
+
 /*секція section-team Наша команда*/
+
+
 .section-team ul{
     background-color: var(--background-color-third);
     display: flex;
+    
 }
 
 .section-team li{
@@ -264,21 +294,29 @@ a{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     align-items: flex-start;
+    text-align: center;
+    
+}
+.team-img{
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .team-name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 .team-text{
     color: var(--color-secondary);
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 /*footer*/
@@ -321,7 +359,7 @@ a{
         border: 0; 
         padding: 0; 
         white-space: nowrap;
-         clip-path: inset(100%); 
+        clip-path: inset(100%); 
         clip: rect(0 0 0 0); 
         overflow: hidden;
     }
@@ -351,3 +389,12 @@ a{
     color: var(--color-secondary);
 }
 
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.filter{
+    margin-top: 0;
+    margin-bottom: 34px;
+}
