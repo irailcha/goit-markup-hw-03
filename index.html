@@ -19,16 +19,17 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="page-header">
-      <div class="container main-nav">
+    <div class="container">
+      <header class="page-header">
         <nav class="nav">
-          <a class="link-logo" href="./index.html"
-            ><span class="logo-header">Web</span>Studio</a
-          >
+        <a class="link-logo" href="./index.html"
+          ><span class="logo-header">Web</span>Studio</a
+        >
 
-          <!-- Навігація на інші сторінки -->
+        <!-- Навігація на інші сторінки -->
+        
           <ul class="site-nav">
-            <li><a class="link" href="./index.htm">Студія</a></li>
+            <li><a class="link" href="./index.html">Студія</a></li>
             <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
             <li><a class="link" href="#">Контакт</a></li>
           </ul>
@@ -43,32 +44,27 @@
             <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </div>
-    </header>
+      </header>
 
-    <main>
-      <section class="hero">
+      <main>
         <section class="section">
-          <div class="section-hero">
-            <div class="container">
-              <h1 class="hero-title">
-                Ефективні рішення для <br />
-                вашого бізнесу
-              </h1>
-              <button type="button" class="button-primary">
-                Замовити послугу
-              </button>
-            </div>
+         <div class="hero">
+            <h1 class="hero-title">Ефективні рішення для </br> вашого бізнесу</h1>
+            <button type="button" class="button-primary">
+              Замовити послугу
+            </button>
           </div>
         </section>
-      </section>
 
-      <section class="subtitle-hero">
+
+
+   
+
         <section class="section">
-          <div class="container">
-            <ul class="element-hero">
+<h2 class="visually-hidden">наші переваги</h2>
+            <ul class="features">
               <li class="feature-list">
-                <h3 class="caption">увага до деталей</h3>
+                <h3 class="caption">Увага до деталей</h3>
                 <p class="text-hero">
                   Ідейні міркування, і навіть початок повсякденної роботи з
                   формування позиції.
@@ -76,7 +72,7 @@
               </li>
 
               <li class="feature-list">
-                <h3 class="caption">пунктуальність</h3>
+                <h3 class="caption">Пунктуальність</h3>
                 <p class="text-hero">
                   Завдання організації, особливо рамки і місце навчання кадрів
                   тягне у себе.
@@ -84,7 +80,7 @@
               </li>
 
               <li class="feature-list">
-                <h3 class="caption">планування</h3>
+                <h3 class="caption">Планування</h3>
                 <p class="text-hero">
                   Так само консультація з широким активом значною мірою
                   зумовлює.
@@ -92,23 +88,21 @@
               </li>
 
               <li class="feature-list">
-                <h3 class="caption">сучасні технологіі</h3>
+                <h3 class="caption">Сучасні технологіі</h3>
                 <p class="text-hero">
                   Значимість цих проблем настільки очевидна, що реалізація
                   планових завдань.
                 </p>
               </li>
             </ul>
-          </div>
-        </section>
-      </section>
 
-      <section class="section-fuatures">
-        <section class="section">
-          <div class="container">
+        </section>
+
+      
+          <section class="section">
             <h2 class="section-tittle">Чим ми займаємося</h2>
             <ul class="fuature-box">
-              <li>
+              <li class="feature-card">
                 <img
                   class="feature"
                   src="./images/box1.jpg"
@@ -116,7 +110,7 @@
                   width="370"
                 />
               </li>
-              <li>
+              <li class="feature-card">
                 <img
                   class="feature"
                   src="./images/box2.jpg"
@@ -124,7 +118,7 @@
                   width="370"
                 />
               </li>
-              <li>
+              <li class="feature-card">
                 <img
                   class="feature"
                   src="./images/box3.jpg"
@@ -133,17 +127,16 @@
                 />
               </li>
             </ul>
-          </div>
-        </section>
-      </section>
+          </section>
+       
 
-      <section class="section-team">
-        <section class="section">
-          <div class="container">
+         <div class="section-team">
+          <section class="section">
+           
             <h2 class="section-tittle">Наша команда</h2>
 
             <ul class="team-list">
-              <li>
+              <li class="team-card">
                 <img
                   class="team-img"
                   src="./images/img1.jpg"
@@ -154,7 +147,7 @@
                 <p class="team-text">Product Designer</p>
               </li>
 
-              <li>
+              <li class="team-card">
                 <img
                   class="team-img"
                   src="./images/img2.jpg"
@@ -165,7 +158,7 @@
                 <p class="team-text">Frontend Developer</p>
               </li>
 
-              <li>
+              <li class="team-card">
                 <img
                   class="team-img"
                   src="./images/img3.jpg"
@@ -176,7 +169,7 @@
                 <p class="team-text">Marketing</p>
               </li>
 
-              <li>
+              <li class="team-card">
                 <img
                   class="team-img"
                   src="./images/img4.jpg"
@@ -187,13 +180,12 @@
                 <p class="team-text">UI Designer</p>
               </li>
             </ul>
-          </div>
+           
         </section>
-      </section>
-    </main>
+         </div>
+      </main>
 
-    <footer class="footer">
-      <div class="container">
+      <footer class="footer">
         <a class="logo" href="./index.html"
           ><span class="logo-footer">Web</span>Studio</a
         >
@@ -220,7 +212,7 @@
             >
           </li>
         </ul>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
